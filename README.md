@@ -6,6 +6,11 @@ Specify an island, add herbivores and carnivores and watch the populations devel
  - Customizable landscape type parameters
  - Save visualization as movie
 
+### Summary of simulation
+![ Alt text](docs/Images/humans.gif) / ! [](docs/Images/humans.gif)
+
+
+## Documenation
 To simulate a 2x2 island with 10 Herbivores for 100 years
 ```python
 geogr = "WWWW\nWLDW\nWHLW\nWWWW"
