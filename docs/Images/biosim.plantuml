@@ -1,0 +1,29 @@
+@startuml
+
+top to bottom direction
+skinparam linetype ortho
+allowmixing
+
+class node7 as "biosim.graphics.Graphics"
+class node3 as "biosim.biographics.BioGraphics"
+component Parameters
+class node5 as "biosim.simulation.BioSim"
+class node9 as "biosim.island.Island"
+class node2 as "biosim.landscape.Landscape"
+class node4 as "biosim.carnivore.Carnivore"
+class node0 as "biosim.herbivore.Herbivore"
+class node8 as "biosim.animals.Animal"
+
+node3 -> node5: import
+
+node5 <-- Parameters: import
+Parameters <-- node4: import
+Parameters <-- node0: import
+
+node5 <- node9: import
+node9 <- node2: import
+
+node3   ^-[#595959,plain]-  node7  
+node0   ^-[#595959,plain]-  node8
+node4   ^-[#595959,plain]-  node8
+@enduml
